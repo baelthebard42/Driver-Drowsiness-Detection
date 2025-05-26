@@ -3,7 +3,7 @@ Running this script results in the extraction and saving of faces
  from images in specified directories BASE_DIR and SUB_DIRS to the SAVE_DIRS with
  SAVE_IMG_SIZE.
 
- Make sure corresponding directories match in SUB_DIRS and SAVE_DIRS.
+
 
 """
 
@@ -43,9 +43,6 @@ mp_face_detection = mp.solutions.face_detection
 with mp_face_detection.FaceDetection(model_selection = 0, min_detection_confidence = 0.5 ) as face_detection:
 
   for idx, dir in enumerate(SUB_DIRS):
- 
-   if dir!='yawn':
-    continue
  
    save_path = os.path.join(BASE_DIR, SAVE_DIRS[idx])
 
