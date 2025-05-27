@@ -14,13 +14,16 @@ class DrowsinessDataset(Dataset):
         with open(self.annotation_dir, 'r') as file:
             self.data = list(json.load(file).values())
     
+    def __len__(self):
+        return len(self.data)
+    
     def __getitem__(self, index):
         image_path = self.data[index]['image_path']
-        image = np.array(Image.open(image_path).convert("RGB"))
+        image = Image.open(image_path).convert("RGB")
         targets = torch.tensor(list(self.data[index]["targets"].values()), dtype=torch.float32)
 
         if self.transform is not None:
-            augmentations = self.transform(image=image)
-            image = augmentations["image"]
+            image = self.transform(image)
+           
         
         return image, targets
