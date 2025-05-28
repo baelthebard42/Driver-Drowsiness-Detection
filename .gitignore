@@ -2,3 +2,4 @@ venv/
 train/
 *.xml
 __pycache__/
+*.mp4
