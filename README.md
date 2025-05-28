@@ -1,6 +1,6 @@
 # Utilizing CNN to Detect Driver Drowsiness in Real Time
 
-Drowsy driving is one of the leading causes of traffic accidents worldwide. Detecting driver fatigue in real time can prevent potentially fatal incidents. By leveraging convolutional neural networks (CNNs), we aim to build an efficient, real-time system capable of identifying signs of drowsiness based on facial features. This approach can enhance vehicular safety and contribute to intelligent transport systems.
+Drowsy driving is one of the leading causes of traffic accidents worldwide. Detecting driver fatigue in real time can prevent potentially fatal incidents. By leveraging convolutional neural networks (CNNs), this project aims to build an efficient, real-time system capable of identifying signs of drowsiness based on facial features. This approach can enhance vehicular safety and contribute to intelligent transport systems.
 
 **Reference Research Paper**: [Driver Drowsiness Detection Using CNN](https://www.mdpi.com/2478244)
 
